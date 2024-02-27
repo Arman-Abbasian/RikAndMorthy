@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .mobile-icon {
+      width:1.2rem;
+      height: 1.2rem;
+    }
+    .scrollBar{
+      @apply  overflow-y-auto scrollbar-thin scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-color-primary scrollbar-track-color-text
+    }
+  }
+html, body, #root{
+font-family: 'Libre Franklin', sans-serif;
+--color-primary: #334155;
+--color-secondary:#7c3aed;
+--color-text:#CBD5E1;
+--color-dark-primary:#1E293B;
+background-color:var(--color-primary);
+color: var(--color-text);
+}
